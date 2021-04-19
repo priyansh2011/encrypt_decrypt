@@ -1,3 +1,4 @@
+@@ -0,0 +1,45 @@
 # This program illustrates a simple example for encrypting/ decrypting your text
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -32,7 +33,14 @@ def decrypt(message, key):
     return decrypted
 
 def main():
-    print("Hello world")
+    message = str(input('Enter your message: '))
+    key = int(input('Enter you key [1 - 26]: '))
+    choice = input('Encrypt or Decrypt? [E/D]: ')
+
+    if choice.lower().startswith('e'):
+        print(encrypt(message, key))
+    else:
+        print(decrypt(message, key))
 
 if __name__ == '__main__':
     main()
