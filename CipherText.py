@@ -33,14 +33,17 @@ def decrypt(message, key):
     return decrypted
 
 def main():
-    message = str(input('Enter your message: '))
-    key = int(input('Enter you key [1 - 26]: '))
-    choice = input('Encrypt or Decrypt? [E/D]: ')
-
-    if choice.lower().startswith('e'):
-        print(encrypt(message, key))
-    else:
-        print(decrypt(message, key))
+    message=Priyansh
+    key=2
+    print("Message : ")
+    print(message)
+    print("\n")
+    print("Encrypted message : ")
+    e_message=encrypt(message, key)
+    print(e_message)
+    print("\n")
+    print("Decrypted message : ")
+    print(decrypt(e_message, key))
 
 if __name__ == '__main__':
     main()
