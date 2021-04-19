@@ -33,7 +33,7 @@ def decrypt(message, key):
     return decrypted
 
 def main():
-    message="Priyansh"
+    message="priyansh"
     key=2
     print("Message : ")
     print(message)
