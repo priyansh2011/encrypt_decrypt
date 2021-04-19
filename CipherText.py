@@ -1,4 +1,4 @@
-@@ -0,0 +1,45 @@
+# @@ -0,0 +1,45 @@
 # This program illustrates a simple example for encrypting/ decrypting your text
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
